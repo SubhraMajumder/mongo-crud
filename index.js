@@ -10,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(express.json()); // To parse JSON bodies
-app.use(cors());
+app.use(cors()); 
 
 // Connect to MongoDB Atlas (connection logic remains the same)
 const MONGO_URI = process.env.MONGO_URI;

@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
   } catch (error) {
     res.status(400).json({ message: error.message }); // 400 Bad Request for validation errors
   }
-});
+}); 
 
 // 2. READ All (GET /api/tasks)
 router.get('/', async (req, res) => {
